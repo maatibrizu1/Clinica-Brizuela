@@ -1,0 +1,314 @@
+/* SASS BEM */
+
+/* INDEX CARDS */
+.card__secciones--margenes{
+    background-color: rgba(223, 222, 222, 0.678);
+    padding: 50px 25px 50px 25px;
+    margin-bottom: 50px;
+    #labCard .boton--color{
+        background-color: black;
+        border-style: none;
+    }
+    #planCard .boton--color{
+        background-color: black;
+        border-style: none;
+    }
+    #osCard .boton--color{
+        background-color: black;
+        border-style: none;
+    }
+    #labCard, #planCard, #osCard{
+        justify-content: center;
+    }
+}
+
+/* Variables */
+h1{
+    font-size: 20px;
+}
+h2{
+    font-size: 18px;
+}
+
+/* PAGE LABORATORIO  */
+
+.card__titulos{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 1.5rem;
+    .subtitulo{
+        font-size: 1rem;
+    }
+}
+.video__contenedor--estilo{
+    height: 500px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+}
+
+/* PAGE ESTUDIOS */
+/* CARD TEXT PRE ESTUDIOS */
+
+.borde--texto{
+    border-left: rgb(255, 1, 0) 5px solid;
+    .boton--estilo{
+        background-color: black;
+        color: whitesmoke;
+        font-weight: bold;
+        border-color: black;
+    }
+}
+.estudios--lista{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* PLANES PAGE */
+.planes__container{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.boton__bronce--estilo{
+    background-color: #b75a24;
+    text-align: center;
+    a{
+        color: black;
+        font-weight: bold;
+    }
+}
+.boton__plata--estilo{
+    background-color: #dcdee0;
+    text-align: center;
+    a{
+        color: black;
+        font-weight: bold;
+    }
+}
+.boton__oro--estilo{
+    background-color: #f5c748;
+    text-align: center;
+    a{
+        color: black;
+        font-weight: bold;
+    }
+}
+
+/* MOUSEOVER A PLANES */
+.container--hover{
+    transition: 0.5s;
+    &:hover{
+        transform: scale(1.01,1.01);
+        box-shadow: 12px 12px 4px #999;   
+    }
+}
+
+
+/* Nosotros */
+.bg__image{
+    background-image: url(../media/fondosalud.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cont--estilo{
+    height: 1100px;
+    margin: 100px 0 100px 0;
+    padding: 50px 0 50px 0;
+}
+.formulario__contacto{
+    margin: 50px;
+    padding: 15px;
+    max-width: 1100px;    
+}
+.container form button{
+    border-style: none;
+}
+
+/* PAGE INGRESAR */
+.container__form{
+    max-width: 300px;
+    height: 100vh;
+    align-items: center;
+}
+.form__ingresar{
+    padding: 20px;
+    border-left: 7px double #666262;
+    border-radius: 0px 40px 0px 40px;
+    border-top: 7px solid #666262;
+    border-radius: 0px 40px 0px 40px;
+    border-bottom: 7px double #666262;
+    border-radius: 0px 40px 0px 40px;
+    border-right: 7px solid #666262;
+    border-radius: 0px 40px 0px 40px;
+    outline: 7px hidden #B2ABAB;
+    background-color: rgb(245, 245, 245);
+    .btn{
+        background-color: black;
+    }
+}
+.bg__ingresar{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background:linear-gradient(#ffffff, #e2e3ee);
+}
+
+
+/* PAGE COBERTURAS */
+
+/* GRILLA OS */
+.grillaOs{
+    display: grid;
+    grid-template-areas: 
+    ". up pam san ."
+    ". ose acc osm ."
+    ". osp ospj lui ."
+    ;
+    grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
+    grid-template-rows: auto auto auto auto auto;
+    align-items: center;
+    justify-items: center;   
+    row-gap: 32px;
+    column-gap: 16px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.sanidad{
+    grid-area: san;
+}
+.pami{
+    grid-area: pam;
+}
+.unionPersonal{
+    grid-area: up;
+}
+.osecac{
+    grid-area: ose;
+}
+.accord{
+    grid-area: acc;
+}
+.osmata{
+    grid-area: osm;
+}
+.osperyh{
+    grid-area: osp;
+}
+.ospj{
+    grid-area: ospj;
+}
+.luisp{
+    grid-area: lui;
+}
+
+.txtOs{
+    margin-top: 50px;
+    h2{
+        font-size: 16px;
+        font-weight: normal;
+        margin-bottom: 20px;
+    }
+    h5{
+        font-size: 18px;
+        font-weight: normal;
+    }
+}
+.grillaOs div{
+    transition: 0.5s;
+    &:hover{
+        transform: scale(1.1,1.1);
+        box-shadow: 7px 7px 2px #999;   
+    }
+}
+
+/* GRID FOOTER */
+.foot{
+    display: grid;
+    grid-template-areas: 
+    ". don . com map ig . cont"
+    ". call . com map fb . tel"
+    ". cod . cop map tw . mail"
+    ;
+    grid-template-columns: 0.5fr 2fr 0.5fr 2fr 0.5fr 2fr 0.5fr 2fr;
+    grid-template-rows: auto auto auto auto auto auto auto auto;
+    align-items: center;
+    justify-items: center;
+    background-color: black;
+    color: rgb(189, 189, 189);
+}
+/* FOOTER MEDIA QUERY */
+@media only screen and (max-width: 768px){
+    .foot{
+        display: grid;
+        justify-content: space-between;
+        grid-template-areas: 
+        "don don don"  
+        "call call call" 
+        "cod cod cod"
+        "com com com"
+        "map map map"
+        "cont cont cont"
+        "tel tel tel"
+        "mail mail mail"
+        "ig fb tw"
+        "cop cop cop"
+        ;
+        grid-template-columns: 2fr 2fr 2fr;
+        grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
+        align-items: center;
+        justify-items: center;
+        background-color: black;
+        color: rgb(189, 189, 189);
+        margin-top: 50px;
+    }
+    .foot a{
+        justify-self: center;
+    }
+    
+}
+
+
+/* TAGS FOR GRIDS */
+.t1{
+    grid-area: don;
+}
+.t2{
+    grid-area: call; 
+}
+.t3{
+    grid-area: cod;
+}
+.t4{
+    grid-area: cop;
+}
+.t5{
+    grid-area: com;
+}
+.t6{
+    grid-area: map;
+}
+.t7{
+    grid-area: cont;
+}
+.t8{
+    grid-area: tel;
+}
+.t9{
+    grid-area: mail;
+}
+.t10{
+    grid-area: ig;
+    justify-self: right;
+}
+.t11{
+    grid-area: fb;
+    justify-self: right;
+}
+.t12{
+    grid-area: tw;
+    justify-self: right;
+}
+

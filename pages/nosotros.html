@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conoce mas sobre nosotros</title>
+    <!-- METAS SEO -->
+    <meta name="keywords" content="nosotros,salud,contacto,contactanos,adherite,informacion,conocenos,formulario">
+    <meta name="description" content="Empresa de salud con 50 años brindandote la mejor calidad de estudios. Sabemos lo importante que es estar bien. Contactanos para mas informacion.">
+    <!-- FUENTE -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    <!-- NAV BAR -->
+    <nav id="navigationBar" class="navbar navbar-expand-lg navbar-light bg-light p-3 mb-2 bg-dark shadow-lg p-3 mb-5 rounded">
+        <!-- LOGO NAV BAR -->  
+        <div class="logo px-0">
+            <img src="../media/logoprincipal.png" alt="logo" width="45px" height="45px">
+        </div>
+        <!-- MENU NAV BAR -->
+        <a class="navbar-brand text-white px-5" href="../index.html">Clinica Brizuela</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll" style="max-height: 100px;">
+            <li class="nav-item active">
+                <a class="nav-link  text-white" href="../pages/laboratorio.html">Laboratorio <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link  text-white" href="../pages/coberturas.html">Coberturas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link  text-white" href="../pages/planes.html">Planes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link  text-white" href="../pages/nosotros.html">Nosotros</a>
+            </li>
+            </ul>
+            <!-- LOGEAR EN NAV BAR -->
+            <form class="d-flex">
+                <a href="../pages/ingresar.html"><img src="../media/logo.png" alt="logear" width="60px" height="60px"></a>
+            </form>
+            <!-- DROPDOWN NAV -->
+            <div id="botondrop" class="dropdown">
+                <button class="dropDesafio btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Personal
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Mi portal</a>
+                  <a class="dropdown-item" href="#">Mi perfil</a>
+                  <a class="dropdown-item" href="#">Cerrar sesion</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- TITULOS Y TEXTO -->
+    <div class="bg__image cont--estilo container-fluid">
+        <div class="card__titulos shadow p-3 mb-5 bg-white rounded card">
+            <div class="titulo card-body ">
+                <h1 class="titulo animate__animated animate__lightSpeedInLeft">Clinica Brizuela</h1>
+            </div>
+            <div class="subtitulo card-body text-muted">
+                <h2 class="subtitulo animate__animated animate__lightSpeedInLeft">El lugar para vos.</h2>
+            </div>
+        </div>
+        <div class="txtOs container-fluid d-flex justify-content-center">
+            <div class="card" style="width: 60rem;">
+                <div class="borde--texto bordeTexto card-body">
+                    <h5 class="card-text">
+                        Sabemos que su salud y la de sus familiares es muy importante, por eso tenemos a su disposicion
+                        a nuestros mejores profesionales, y la mejor aparatoligía médica para sus estudios. Todas nuestras especialidades estan a su alcance, con nuestro sistema de turnos, hacemos que esta pandemia no complique aun mas el sistema de salud.
+                    </h5>
+                </div>
+            </div>
+        </div>
+
+        <!-- FORMULARIO CONTACTO -->
+        <div class="cont__form container">
+            <form class="border border-secondary formulario__contacto bg-white row g-3">
+                <div class="col-md-6">
+                  <label for="inputName" class="py-1 form-label">Nombre</label>
+                  <input type="text" class="form-control" id="inputName" placeholder="Ingrese su nombre">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputLastname" class="py-1 form-label">Apellido</label>
+                  <input type="text" class="form-control" id="inputLastname" placeholder="Ingrese su apellido">
+                </div>
+                <div class="col-12">
+                  <label for="inputEmail" class="py-1 form-label">Email</label>
+                  <input type="email" class="form-control" id="inputAddress" placeholder="Ejemplo@hotmail.com">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputTel" class="py-1 form-label">Teléfono:</label>
+                    <input type="tel" class="form-control" id="inputTel" placeholder="Ingrese su telefono (ej: 011-34507069)">
+                </div>
+                <div class="col-12">
+                    <div class="py-1 form-floating">
+                       <label for="floatingTextarea2">Consulta:</label>
+                       <textarea class="form-control" placeholder="Dejanos tu consulta aqui" id="floatingTextarea2" style="height: 100px"></textarea>  
+                    </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="py-1 form-check-input" type="checkbox" id="gridCheck">
+                    <label class="py-1 form-check-label" for="gridCheck">
+                      Acepto terminos y condiciones.
+                    </label>
+                  </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-check">
+                      <input class="py-1 form-check-input" type="checkbox" id="gridCheck">
+                      <label class="py-1 form-check-label" for="gridCheck">
+                        Deseo recibir informacion por mail.
+                      </label>
+                    </div>
+                  </div>
+                <div class="col-12">
+                  <button type="submit" class="py-1 bg-dark btn btn-primary">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- FOOTER GRID -->
+
+     <footer class="foot">
+        <span class="t1">Clinica Brizuela</span>
+        <span class="t2">Avenida siempre viva 742, Springfield</span>
+        <span class="t3">Código Postal: C1199ABB</span>
+        <span class="t4">Copyright © 2015 - 2021 Clínica-Web</span>
+        <span class="t5">Cómo llegar:</span>
+        <iframe class="t6" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.3554987405096!2d-58.44358868417458!3d-34.620455565892144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca38b9032c37%3A0x1295d36b68ed5640!2sPrimera%20Junta!5e0!3m2!1ses-419!2sar!4v1624028522450!5m2!1ses-419!2sar" width="300" height="150" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <span class="t7"><a href="../pages/nosotros.html">¡Contactanos!</a></span>
+        <span class="t8">(011) 4999-1800 (102)</span>
+        <span class="t9">Clinicabrizuela@gmai.com</span>
+        <a class="t10" href="https://www.instagram.com/" target="_blank"><img src="../media/iglogo.jpg" alt="iglogo" width="55px"></a>
+        <a class="t11" href="https://www.facebook.com/" target="_blank"><img src="../media/fblogo.jpg" alt="fblogo" width="55px"></a>
+        <a class="t12" href="https://twitter.com/" target="_blank"><img src="../media/twlogo.jpg" alt="twlogo" width="55px"></a>
+    </footer>
+
+    <!-- JS BOOTSTRAP -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    
+</body>
+</html>
